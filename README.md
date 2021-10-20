@@ -43,3 +43,29 @@ If you absolutely have to build from source, use:
   make -j$(nproc)
   sudo make install
 ```
+# Usage With i3Blocks
+
+I have made a configuration for i3blocks. I am going to make it an official part of the project soon, but for the sake of saving time and storing the code here, here is the **i3blocks.conf**:
+
+`
+[app launcher]
+full_text=i3-r3 launcher
+command=i3-dmenu-desktop --dmenu='dmenu -i -nb black -nf purple -sb green -sf red -l 10 -p "nightshader - Applications List:"'
+#interval=persist
+align=left
+min_width=1100
+
+[separator]
+
+[logout]
+full_text=log out of i3-r3
+command=logout
+align=center
+min_width=100
+
+[shutdown]
+full_text=shut down
+command=shutdown -h 1 && notify-send "Shutting down in 1 minute..."
+align=center
+min_width=100
+`
