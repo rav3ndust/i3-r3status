@@ -1,4 +1,4 @@
-# i3status
+# i3-r3status
 
 ## Description
 
