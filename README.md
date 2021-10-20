@@ -49,23 +49,29 @@ I have made a configuration for i3blocks. I am going to make it an official part
 
 ```
 [app launcher]
-full_text=i3-r3 launcher
+full_text=i3r3 apps launcher
 command=i3-dmenu-desktop --dmenu='dmenu -i -nb black -nf purple -sb green -sf red -l 10 -p "nightshader - Applications List:"'
 #interval=persist
-align=left
-min_width=1100
+align=center
+min_width=125
+
+[file browser]
+full_text=files
+command=nemo
+align=center
+min_width=75
 
 [separator]
 
 [logout]
 full_text=log out of i3-r3
-command=logout
+command=kitty ~/i3-r3-scripts/logout.sh
 align=center
-min_width=100
+min_width=125
 
 [shutdown]
 full_text=shut down
 command=shutdown -h 1 && notify-send "Shutting down in 1 minute..."
 align=center
-min_width=100
+min_width=75
 ```
